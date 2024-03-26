@@ -9,6 +9,7 @@ import { Paginations } from './features/pagination/components/Pagination';
 import { ItemDetail } from './features/pagination/components/ItemDetail';
 import { rakutenItem } from './features/pagination/types/rakutenAPI';
 import { EditImage } from './features/editImage/components/EditImage';
+import { DragAndDrop } from './features/dragAndDrop/components/DragAndDrop';
 
 const App = () => {
   const [item, setItem] = useState<rakutenItem>({
@@ -29,7 +30,8 @@ const App = () => {
             <Link to="/narrow">課題3.フォームのセレクト絞込み表示</Link><br />
             <Link to="/inmodal">課題4.モーダル内容変更と削除と項目の追加</Link><br />
             <Link to="/pagenation">課題5.ページャー（ページネーション）機能と詳細画面</Link><br />
-            <Link to="/editImg">課題6.画像リサイズ機能と画像ダウンロード機能</Link>
+            <Link to="/editImg">課題6.画像リサイズ機能と画像ダウンロード機能</Link><br />
+            <Link to="/drag">課題7.ドラッガブル機能</Link>
           </div>
           <div id='element'>
             <Routes>
@@ -40,6 +42,7 @@ const App = () => {
               <Route path='/pagenation' element={<Paginations updateItem={updateItem} />} />
               <Route path='/item' element={<ItemDetail itemCaption={item.itemCaption} itemName={item.itemName} itemPrice={item.itemPrice} mediumImageUrls={item.mediumImageUrls} rank={item.rank} />} />
               <Route path='/editImg' element={<EditImage />} />
+              <Route path='/drag' element={<DragAndDrop />} />
             </Routes>
           </div>
         </BrowserRouter>
