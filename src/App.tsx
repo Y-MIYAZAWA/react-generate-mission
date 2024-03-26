@@ -10,6 +10,7 @@ import { ItemDetail } from './features/pagination/components/ItemDetail';
 import { rakutenItem } from './features/pagination/types/rakutenAPI';
 import { EditImage } from './features/editImage/components/EditImage';
 import { DragAndDrop } from './features/dragAndDrop/components/DragAndDrop';
+import { Charts } from './features/charts/components/Charts';
 
 const App = () => {
   const [item, setItem] = useState<rakutenItem>({
@@ -32,6 +33,7 @@ const App = () => {
             <Link to="/pagenation">課題5.ページャー（ページネーション）機能と詳細画面</Link><br />
             <Link to="/editImg">課題6.画像リサイズ機能と画像ダウンロード機能</Link><br />
             <Link to="/drag">課題7.ドラッガブル機能</Link>
+            <Charts />
           </div>
           <div id='element'>
             <Routes>
