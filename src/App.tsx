@@ -11,6 +11,7 @@ import { rakutenItem } from './features/pagination/types/rakutenAPI';
 import { EditImage } from './features/editImage/components/EditImage';
 import { DragAndDrop } from './features/dragAndDrop/components/DragAndDrop';
 import { Charts } from './features/charts/components/Charts';
+import { Login } from './features/login/components/Login';
 
 const App = () => {
   const [item, setItem] = useState<rakutenItem>({
@@ -32,8 +33,9 @@ const App = () => {
             <Link to="/inmodal">課題4.モーダル内容変更と削除と項目の追加</Link><br />
             <Link to="/pagenation">課題5.ページャー（ページネーション）機能と詳細画面</Link><br />
             <Link to="/editImg">課題6.画像リサイズ機能と画像ダウンロード機能</Link><br />
-            <Link to="/drag">課題7.ドラッガブル機能</Link>
-            <Link to="/chart">課題8.グラフ機能</Link>
+            <Link to="/drag">課題7.ドラッガブル機能</Link><br />
+            <Link to="/chart">課題8.グラフ機能</Link><br />
+            <Link to="/login">課題9.ログイン機能</Link>
           </div>
           <div id='element'>
             <Routes>
@@ -46,6 +48,7 @@ const App = () => {
               <Route path='/editImg' element={<EditImage />} />
               <Route path='/drag' element={<DragAndDrop />} />
               <Route path='/chart' element={<Charts />} />
+              <Route path='/login' element={<Login />} />
             </Routes>
           </div>
         </BrowserRouter>
