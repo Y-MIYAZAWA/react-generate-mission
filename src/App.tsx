@@ -33,7 +33,7 @@ const App = () => {
             <Link to="/pagenation">課題5.ページャー（ページネーション）機能と詳細画面</Link><br />
             <Link to="/editImg">課題6.画像リサイズ機能と画像ダウンロード機能</Link><br />
             <Link to="/drag">課題7.ドラッガブル機能</Link>
-            <Charts />
+            <Link to="/chart">課題8.グラフ機能</Link>
           </div>
           <div id='element'>
             <Routes>
@@ -45,6 +45,7 @@ const App = () => {
               <Route path='/item' element={<ItemDetail itemCaption={item.itemCaption} itemName={item.itemName} itemPrice={item.itemPrice} mediumImageUrls={item.mediumImageUrls} rank={item.rank} />} />
               <Route path='/editImg' element={<EditImage />} />
               <Route path='/drag' element={<DragAndDrop />} />
+              <Route path='/chart' element={<Charts />} />
             </Routes>
           </div>
         </BrowserRouter>

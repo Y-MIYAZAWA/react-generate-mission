@@ -1,6 +1,3 @@
 #charts{
   display: flex;
 }
-label[for]{
-  display: block;
-}
