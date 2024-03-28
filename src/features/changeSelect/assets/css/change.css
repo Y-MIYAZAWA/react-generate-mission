@@ -1,0 +1,19 @@
+#container{
+  display: flex;
+  justify-content: space-around;
+}
+#left-container{
+  border: 1px solid black;
+  padding: 1%;
+  height: 300px;
+  width: 200px;
+}
+#right-container{
+  border: 1px solid red;
+  padding: 1%;
+  height: 300px;
+  width: 200px;
+}
+#button-case{
+  text-align: center;
+}

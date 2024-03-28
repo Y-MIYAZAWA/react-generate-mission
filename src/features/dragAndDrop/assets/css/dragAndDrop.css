@@ -1,0 +1,26 @@
+#drop-zone{
+  border: 1px dotted black;
+  width: 80%;
+  height: 100px;
+  margin: 1% auto;
+  text-align: center;
+}
+#title{
+  text-align: center;
+}
+#buttons{
+  text-align: center;
+}
+#files{
+  display: flex;
+  border: 1px dotted black;
+  width: auto;
+  height: auto;
+}
+#files div{
+  width: 15%;
+  margin: 1%;
+  border: 1px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
